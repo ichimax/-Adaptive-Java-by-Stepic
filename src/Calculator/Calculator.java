@@ -17,36 +17,24 @@ class Calculator {
                 System.out.println(firstNumber - secondNumber);
                 break;
             case "/":
-                if(!isZero(secondNumber)) {
-                    System.out.println(firstNumber / secondNumber);
-                }
+                System.out.println(secondNumber == 0 ? "Division by 0!" : firstNumber / secondNumber);
                 break;
             case "*":
                 System.out.println(firstNumber * secondNumber);
                 break;
             case "mod":
-                if(!isZero(secondNumber)) {
-                    System.out.println(Math.floorMod((int)firstNumber, (int)secondNumber));
-                }
+                System.out.println(secondNumber == 0 ? "Division by 0!" :
+                    Math.floorMod((int) firstNumber, (int) secondNumber));
                 break;
             case "pow":
                 System.out.println(Math.pow(firstNumber, secondNumber));
                 break;
             case "div":
-                if(!isZero(secondNumber)) {
-                    System.out.println(Math.floorDiv((int)firstNumber, (int)secondNumber));
-                }
+                System.out.println(secondNumber == 0 ? "Division by 0!" :
+                    Math.floorDiv((int) firstNumber, (int) secondNumber));
                 break;
             default:
                 System.out.println("unknown operation " + operation);
         }
-    }
-
-    private static boolean isZero(double secondNumber) {
-        if(secondNumber == 0) {
-            System.out.println("Division by 0!");
-            return true;
-        }
-        return false;
     }
 }
