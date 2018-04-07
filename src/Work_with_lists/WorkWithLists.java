@@ -62,6 +62,6 @@ public class WorkWithLists {
             .collect(Collectors.toCollection(ArrayList::new));
 
         //call printInLine() for resultList
-        printInLine(Arrays.asList(div2list, div3list, otherList));
+//        printInLine(Arrays.asList(div2list, div3list, otherList));
     }
 }
