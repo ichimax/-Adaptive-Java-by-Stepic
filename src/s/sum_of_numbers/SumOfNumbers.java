@@ -2,7 +2,8 @@ package s.sum_of_numbers;
 
 import java.util.Scanner;
 
-/*Given the sequence of numbers, ending with number 0. Find the sum of all these numbers without using a loop.
+/*Given the sequence of numbers, ending with number 0.
+Find the sum of all these numbers without using a loop.
 
 Sample Input:
 
